@@ -120,7 +120,7 @@ class troopid_Plugin extends troopid_LifeCycle {
 		//load up jquery post pessage, allows us to post variables on a simulated ajax call
 		wp_enqueue_script('jquery-postmessage', plugins_url('js/jquery.ba-postmessage.min.js', __FILE__), 'jquery');
 		//load up the receiver logic for this plugin
-		wp_enqueue_script('troopid-receiver', plugins_url('js/receiver.js', __FILE__), 'jquery-postmessage');
+		wp_register_script('troopid-receiver', plugins_url('js/receiver.js', __FILE__), 'jquery-postmessage');
 		//load up the pass through variables for the popup window.
 		wp_enqueue_script('troopid-popup', plugins_url('js/popup.js',__FILE__), 'jquery');
 		//set popup options from wp-options. Localized to js variable.
@@ -263,6 +263,8 @@ EOT;
 		
 		$button = $kind.'_'.$color.'_'.$type.'_'.$size.'.png'; 
 		
+		wp_enqueue_script('troopid-receiver');
+		
 		//output the button html
 		$out = <<<EOT
 <a class="troopid-login-trigger" href="#">
@@ -350,10 +352,8 @@ EOT;
 		
 		$button = $kind.'_'.$color.'_'.$type.'_'.$size.'.png'; 
 		
-		//load up the container for the form preload options
-		wp_enqueue_script('troopid-formload', plugins_url('js/popup.js',__FILE__), 'jquery');
 		//drop the shortcode attribute values into the preload variable
-		wp_localize_script('troopid-formload', 'troopidformload', array(
+		wp_localize_script('troopid-receiver', 'troopidformload', array(
 			'first_name' => $a['first_name'],
 			'last_name' => $a['last_name'],
 			'email' => $a['email'],
@@ -364,6 +364,8 @@ EOT;
 			'service_started' => $a['service_started'],
 			'service_ended' => $a['service_ended']
 		));
+		wp_enqueue_script('troopid-receiver');
+		
 		//output the button html
 		$out = <<<EOT
 <a class="troopid-login-trigger" href="#">
