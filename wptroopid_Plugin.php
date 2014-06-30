@@ -118,7 +118,7 @@ class troopid_Plugin extends troopid_LifeCycle {
 		//load up jquery session storage, nicer than cookies...
 		wp_enqueue_script('jquery-storage', plugins_url('js/jQuery-Storage-API-1.7.2/jquery.storageapi.min.js', __FILE__), 'jquery');
 		//load up jquery post pessage, allows us to post variables on a simulated ajax call
-		//wp_enqueue_script('jquery-postmessage', plugins_url('js/jquery.ba-postmessage.min.js', __FILE__), 'jquery');
+		wp_enqueue_script('jquery-postmessage', plugins_url('js/jquery.ba-postmessage.min.js', __FILE__), 'jquery');
 		//load up the receiver logic for this plugin
 		wp_enqueue_script('troopid-receiver', plugins_url('js/receiver.js', __FILE__), 'jquery-postmessage');
 		//load up the pass through variables for the popup window.
