@@ -18,6 +18,8 @@ $.receiveMessage(
 				$("[name='"+troopidformload.zip+"']").val(data.zip).addClass('prefilled');
 				$("[name='"+troopidformload.verified+"']").val(data.verified).addClass('prefilled');
 				$("[name='"+troopidformload.affiliation+"']").val(data.affiliation).addClass('prefilled');
+				$("[name='"+troopidformload.service_started+"']").val(data.service_started).addClass('prefilled');
+				$("[name='"+troopidformload.service_ended+"']").val(data.service_ended).addClass('prefilled');
 			}
 			$('.troopid-verified').html('Verified');
 		}	

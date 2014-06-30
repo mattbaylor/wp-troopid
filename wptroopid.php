@@ -46,7 +46,7 @@ function troopid_noticePhpVersionWrong() {
 }
 
 
-function wpidme_PhpVersionCheck() {
+function troopid_PhpVersionCheck() {
     global $wptroopid_minimalRequiredPhpVersion;
     if (version_compare(phpversion(), $wptroopid_minimalRequiredPhpVersion) < 0) {
         add_action('admin_notices', 'wptroopid_noticePhpVersionWrong');
@@ -79,7 +79,7 @@ troopid_i18n_init();
 
 // Next, run the version check.
 // If it is successful, continue with initialization for this plugin
-if (wpidme_PhpVersionCheck()) {
+if (troopid_PhpVersionCheck()) {
     // Only load and run the init function if we know PHP version can parse it
     include_once('wptroopid_init.php');
     troopid_init(__FILE__);
