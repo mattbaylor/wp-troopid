@@ -27,7 +27,7 @@ provides four shortcodes:
 
 ### Installation
 1. Upload the released zip file using the plugin uploader in WordPress. Plan to list in WordPress extend/plugins in near future.
-2. [Sign up with ID.me to provision your application and get both your client_id and client_secret.](https://developer.id.me/clients/sign-up "ID.me Developer Signup") 
+2. [Sign up with ID.me to provision your application and get both your client_id and client_secret.](https://developer.id.me/developers/sign-up "ID.me Developer Signup") 
 2. Configure values in the WordPress Admin >> Settings >> WordPress TroopID plugin
   1. id.me client_id: from the signup process with ID.me
   2. id.me client_secret: from the signup process with ID.me
