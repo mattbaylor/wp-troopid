@@ -32,7 +32,7 @@ provides four shortcodes:
   1. id.me client_id: from the signup process with ID.me
   2. id.me client_secret: from the signup process with ID.me
   3. redirect uri: usually defaulted correctly. Should be (http|https)://[server_name]//wp-content/plugins/wp-troopid/wptroopid_redir.php unless you have written your own custom redirect handler
-  4. run plugin in sanbox mode: true for live data, false for test data ([full list of test data here](https://developer.id.me/documentation/test_data) [broken link 10/14/2014 -- Contacting Id.me to see if they have another source of test data.]
+  4. run plugin in sanbox mode: true for live data, false for test data ([full list of test data here](https://developer.id.me/documentation/test_data )[broken link 10/14/2014 -- Contacting Id.me to see if they have another source of test data.]
   5. Size of the button: (small, medium, large)
   6. Color of the button: (red, black, light gray, dark gray, white)
   7. Shape of the button: (rounded, square)
