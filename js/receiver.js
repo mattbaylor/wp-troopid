@@ -11,8 +11,8 @@ $.receiveMessage(
 			if (typeof troopidformload === 'undefined') {
     			
 			} else {
-				$("[name='"+troopidformload.first_name+"']").val(data.first_name).addClass('prefilled');	
-				$("[name='"+troopidformload.last_name+"']").val(data.last_name).addClass('prefilled');
+				$("[name='"+troopidformload.first_name+"']").val(data.fname).addClass('prefilled');	
+				$("[name='"+troopidformload.last_name+"']").val(data.lname).addClass('prefilled');
 				$("[name='"+troopidformload.email+"']").val(data.email).addClass('prefilled');
 				$("[name='"+troopidformload.phone+"']").val(data.phone).addClass('prefilled');
 				$("[name='"+troopidformload.zip+"']").val(data.zip).addClass('prefilled');
