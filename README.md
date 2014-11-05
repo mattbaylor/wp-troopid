@@ -25,6 +25,10 @@ provides four shortcodes:
 
 ```{"id":"08c13e12e52369451876","verified":true,"affiliation":"Service Member","email":"test+active@id.me","first_name":"Ed","last_name":"Snider","phone":"5555555555","zip":"12345","service_ended":null,"service_started":null}```
 
+  - returned JSON has recently changed. New example:
+
+```{"id":"08c13e12e52369451876","verified":true,"affiliation":"Service Member","email":"test+active@id.me","fname":"Ed","lname":"Snider","phone":"5555555555","zip":"12345","service_ended":null,"service_started":null}```
+
 ### Installation
 1. Upload the released zip file using the plugin uploader in WordPress. Plan to list in WordPress extend/plugins in near future.
 2. [Sign up with ID.me to provision your application and get both your client_id and client_secret.](https://developer.id.me/developers/sign-up "ID.me Developer Signup") 
